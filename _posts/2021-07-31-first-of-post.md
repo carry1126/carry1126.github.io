@@ -1,5 +1,15 @@
 ---
-title: "Welcome to Jekyll!"
-date: 2021-07-31 22:57:28 -0400
-categories: jekyll update
+title: "Welcome to 글또6기!"
+date: 2021-07-31 23:20:00 -0400
+categories: minji update
 ---
+
+[글또다짐.pdf](https://github.com/carry1126/minji.github.io/files/6911298/default.pdf)
+
+글또 시작 다짐글을 남긴다.
+github.io는 처음 사용해보는데.. 사용하는 방법을 익혀봐야겠다. 지금은 신세계ㅋㅋ
+나의 속도는 빠르지 않다. 그렇지만 때가 되면 경험하게 된다.
+모든 것들이 시작할때는 의아함과 경이함 사이에 놓이게 된다.
+뒤돌아 볼때는 나의 무지함에 부끄러워질 때가 있다. 하지만 그 과정을 통해서 성장한다.
+글또에 기재한 글들이 나의 성장을 조금이나마 담아두면 좋겠다.
+START^^//
