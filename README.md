@@ -1,1 +1,1 @@
-# minji.github.io
+# 글또6기 글쓰기
