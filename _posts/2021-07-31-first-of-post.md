@@ -1,7 +1,7 @@
 ---
 title: "Welcome to 글또6기!"
 date: 2021-07-31 23:20:00 -0400
-categories: minji update
+categories: writing
 ---
 
 [글또다짐.pdf](https://github.com/carry1126/minji.github.io/files/6911298/default.pdf)
