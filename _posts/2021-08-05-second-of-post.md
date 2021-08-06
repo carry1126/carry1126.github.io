@@ -18,3 +18,7 @@ https://widekey6.tistory.com/105
 
 
 ## 123이라는 숫자가 있을때 나올 수 있는 모든 수를 어떻게 구할 수 있을지 살펴보자
+순환(recursion)을 이용해서 구할 수 있는데 순환은 다음의 조건을 만족해야한다.
+1.적어도 basecase(순환되지 않고 종료되는 case)가 있고 모든 case는 basecase로 수렴되어야 한다. 2. 암시적(implicit) 매개변수를 명시적(explicit) 매개변수로 바꾸라
+
+https://bcp0109.tistory.com/14 참조
