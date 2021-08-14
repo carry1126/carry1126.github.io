@@ -26,17 +26,18 @@ https://codevang.tistory.com/299 참조
 이것을 가지고 순환을 적용해보자.
 123의 숫자를 가지고 있는 배열을 arr, 조합된 배열을 result라고 한다면
 for (int i = 0; i < arr.size(); i++) {
-  permutation(arr, result, arr.size(), i+1);
+  permutation(arr, result, 0, arr.size(), i+1);
 }
 이런 식으로 호출할 수 있다.
-public void permutation(List<Integer> arr, List<Integer> result, n, r) {
+public void permutation(List<Integer> arr, List<Integer> result, int begin, int end, r) {  begin, end로 명시적 표현
   if (r == 0) {
+    basecase
     ...결과 처리...
   } 
   
-  for (int i = 0; i < n; i++) {
+  for (int i = begin; i < end; i++) {
     result.add(arr.remove(i));
-    permutation(arr, result, n-1, r-1);
+    permutation(arr, result, 0, n-1, r-1);
     arr.add(i, result.remove(result.size() - 1));
   }                      
 }
