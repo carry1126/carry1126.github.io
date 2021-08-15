@@ -11,7 +11,7 @@ categories: algorithm
 조합과 다르게 순서가 있다. 예를 들어서, 조합은 123, 321을 같다고 보지만 순열은 다른 것으로 인식한다.   
 순열과 조합의 차이는 다음 링크를 참고하자.   
 [참조] <https://widekey6.tistory.com/105/>   
-순열의 수를 구하는 공식은 다음과 같다.
+순열의 수를 구하는 공식은 다음과 같다.   
 ![image](https://user-images.githubusercontent.com/4480718/128305286-17fec9e2-3778-4b7b-8f35-52bf287b6192.png)
 
 
