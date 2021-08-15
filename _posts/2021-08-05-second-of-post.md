@@ -17,11 +17,11 @@ categories: algorithm
 
 ## 123이라는 숫자가 있을때 나올 수 있는 모든 수를 어떻게 구할 수 있을지 살펴보자
 순환(recursion)을 이용해서 구할 수 있는데 순환은 다음의 조건을 만족해야한다.   
-1.적어도 basecase(순환되지 않고 종료되는 case)가 있고 모든 case는 basecase로 수렴되어야 한다.   
-2.암시적(implicit) 매개변수를 명시적(explicit) 매개변수로 바꾸어라.   
-[참조] <https://codevang.tistory.com/299>   
+1.적어도 **basecase**(순환되지 않고 종료되는 case)가 있고 **모든 case는 basecase로 수렴**되어야 한다.   
+2.암시적(implicit) 매개변수를 **명시적(explicit) 매개변수**로 바꾸어라.   
+[참조] <https://codevang.tistory.com/297>   
 
-123으로 만들수 있는 숫자의 조합은 3P1 + 3P2 + 3p3 = 3 + 6 + 6 = 15가지이다.(nPr 순열의 공식 적용)
+123으로 만들수 있는 숫자의 조합은 3P1 + 3P2 + 3p3 = 3 + 6 + 6 = 15가지이다.(nPr 순열의 공식 적용)   
 이것을 가지고 순환을 적용해보자.   
 123의 숫자를 가지고 있는 배열을 arr, 조합된 숫자를 담을 배열을 result라고 한다면
 ```
@@ -39,7 +39,7 @@ public void permutation(List<Integer> arr, List<Integer> result, int begin, int 
   
   for (int i = begin; i < end; i++) {
     result.add(arr.remove(i));
-    permutation(arr, result, 0, n-1, r-1);
+    permutation(arr, result, 0, end-1, r-1);
     arr.add(i, result.remove(result.size() - 1));
   }                      
 }
