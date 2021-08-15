@@ -12,7 +12,7 @@ categories: algorithm
 ## 서로 다른 n개의 값에서 r개를 선택해서 일렬로 나열하는 것
 조합과 다르게 순서가 있다. 예를 들어서, 조합은 123, 321을 같다고 보지만 순열은 다른 것으로 인식한다.
 순열과 조합의 차이는 다음 링크를 참고하자.
-[참조] https://widekey6.tistory.com/105
+[참조] <https://widekey6.tistory.com/105/>
 순열의 수를 구하는 공식은 다음과 같다.
 ![image](https://user-images.githubusercontent.com/4480718/128305286-17fec9e2-3778-4b7b-8f35-52bf287b6192.png)
 
@@ -20,7 +20,7 @@ categories: algorithm
 ## 123이라는 숫자가 있을때 나올 수 있는 모든 수를 어떻게 구할 수 있을지 살펴보자
 순환(recursion)을 이용해서 구할 수 있는데 순환은 다음의 조건을 만족해야한다.
 1.적어도 basecase(순환되지 않고 종료되는 case)가 있고 모든 case는 basecase로 수렴되어야 한다. 2. 암시적(implicit) 매개변수를 명시적(explicit) 매개변수로 바꾸라
-[참조] https://codevang.tistory.com/299 
+[참조] <https://codevang.tistory.com/299/>
 
 123으로 만들수 있는 숫자의 조합은 3P1 + 3P2 + 3p3 = 3 + 6 + 6 = 15가지이다.(nPr 순열의 공식 적용)
 이것을 가지고 순환을 적용해보자.
