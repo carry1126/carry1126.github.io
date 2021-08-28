@@ -1,7 +1,7 @@
 ---
 title: "끄적거림"
 date: 2021-08-28 13:31:00 -0400
-categories: 
+categories: writing
 ---
 
 # 단상   
