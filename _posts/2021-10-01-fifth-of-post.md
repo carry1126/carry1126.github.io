@@ -9,13 +9,13 @@ ISP(일반결제) 관련 카드업무를 하면서 관련 기술을 접하게 �
 
 API GateWay : API 서버 앞단에서 모든 API 서버들의 엔드포인트를 단일화 해주는 또다른 서버   
 API에 대한 인증과 인가 기능을 가지고 있으며, 메세지의 내용에 따라 어플리케이션 내부에 있는 마이크로서비스로 라우팅하는 역할을 담당   
-https://velog.io/@tedigom/MSA-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-3API-Gateway-nvk2kf0zbj
+[참조]<https://velog.io/@tedigom/MSA-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-3API-Gateway-nvk2kf0zbj>
 
 TCP(Transmission Control Protocol) : IP 네트워크의 두 컴퓨터 간의 연결 지향 통신을 위한 전송 계층 호스트 간 프로토콜   
 TCP는 가상 포트를 사용하여 두 컴퓨터 간의 물리적 연결을 재사용 할 수 있는 가상 종단 간 연결을 만듦
 
 HTTP API(REST API 포함)   
-https://www.inflearn.com/questions/126743
+[참조]<https://www.inflearn.com/questions/126743>
 
 # ModelMapper   
 Property Mapping   
@@ -25,6 +25,6 @@ map().setXXX(source.getXXX)
 
 Converters   
 
-http://modelmapper.org/user-manual/converters/
-https://amydegregorio.com/2018/01/17/using-custom-modelmapper-converters-and-mappings/
+[참조]<http://modelmapper.org/user-manual/converters/>
+[참조]<https://amydegregorio.com/2018/01/17/using-custom-modelmapper-converters-and-mappings/>
 
