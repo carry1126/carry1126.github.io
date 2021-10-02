@@ -24,7 +24,36 @@ typeMap.addMapping(Source::getFirstName, Destination::setName);
 map().setXXX(source.getXXX)
 
 Converters   
+destination 타입을 전환할 때 위임한다.   
 
+Converters 작성 2가지 방법   
+1.AbstractConverter로 확장   
+
+Converter<String, String> toUpperCase = new AbstractConverter<String, String>() {   
+  protected String convert(String source) {   
+    return source == null ? null : source.toUpperCase();    
+  }   
+};   
+
+2.Converter 인터페이스(현재 매핑 request와 관련된 정보를 포함한 MappingContext를 내포) 구현   
+
+Converter<String, String> toUpperCase = new Converter<String, String>() {   
+ public String convert(MappingContext<String, String> context) {   
+  return context.getSource() == null ? null : context.getSource().toUpperCase();   
+ }   
+};     
+
+3.기타 using converters with properties    
+
+Converter<String, String> toUppercase =   
+    ctx -> ctx.getSource() == null ? null : ctx.getSource().toUppercase();   
+    
+typeMap.addMappings(mapper -> mapper.using(toUppercase).map(Person::getName, PersonDTO::setName));   
+
+lamda 표현식 사용   
+=> typeMap.addMappings(mapper -> mapper.using(ctx -> ((String) ctx.getSource()).toUpperCase())   
+         .map(Person::getName, PersonDTO::setName));   
+         
 [참조]<http://modelmapper.org/user-manual/converters/>   
-[참조]<https://amydegregorio.com/2018/01/17/using-custom-modelmapper-converters-and-mappings/>
-
+[참조]<https://amydegregorio.com/2018/01/17/using-custom-modelmapper-converters-and-mappings/>   
+[참조]<http://modelmapper.org/user-manual/property-mapping/#converters>
