@@ -19,7 +19,7 @@ HTTP API(REST API 포함)
 
 # ModelMapper   
 Property Mapping   
-source의 get메서드와 destination의 set메서드로 구헝   
+source의 get메서드와 destination의 set메서드로 구현   
 typeMap.addMapping(Source::getFirstName, Destination::setName);   
 map().setXXX(source.getXXX)
 
