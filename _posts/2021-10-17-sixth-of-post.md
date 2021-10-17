@@ -46,3 +46,15 @@ $.ajax(settings)
    url : 데이터를 전송할 URL   
    success : ajax 통신에 성공했을 때 호출될 이벤트 핸들러   
    
+   $.ajax({   
+       url:'http://...',   
+       dataType:'json',   
+       type:'POST',   
+       data:{'msg':$('#msg').val()},   
+       success:function(result) {   
+           if(result['result'] == true) {   
+              $('#result').html(result['msg']);   
+           }   
+        }   
+   });   
+   
