@@ -60,3 +60,23 @@ $.ajax(settings)
    
 # 엘리먼트 제어
 [참조]<https://opentutorials.org/course/53/51
+
+# 페이징 처리
+[참조]<https://mchch.tistory.com/140>   
+
+totalData : 총 데이터 수   
+dataPerPage : 한 페이지에 나타낼 데이터 수   
+pageCount : 한 화면에 나타낼 페이지 수
+currentPage : 현재 페이지   
+
+function paing(totalData, dataPerPage, pageCount, currentPage) {   
+  totalPage = Math.ceil(totalData / dataPerPage); //총 페이지 수   
+  
+  pageGroup = Math.ceil(currentPage / pageCount);   //페이지 그룹
+  last = pageGroup * pageCount;   //화면에 보여질 마지막 페이지 번호  
+  
+  first = last - (pageCount - 1); //화면에 보여질 첫번째 페이지 번호   
+  next = last + 1;   //다음 페이지
+  prev = first - 1;  //이전 페이지
+  ...
+}   
