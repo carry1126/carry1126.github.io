@@ -6,7 +6,7 @@ npm -v
 npm install -g create-react-app
 
 create-react-app -v   
-npx create-react-app 
+npx create-react-app (npx 한번만 실행하고 종료)
 
 # React App 실행
 1.바탕화면에 react-app 폴더 생성   
@@ -15,7 +15,7 @@ npx create-react-app
 http://localhost:3000/
 
 # 배포
-1.npm run build
-2.build 파일 생김
+1.npm run build   
+2.build 파일 생김   
 3.npm install -g serve -s build   
-  npx serve -s build
+  npx serve -s build (npx 한번만 실행하고 종료)
