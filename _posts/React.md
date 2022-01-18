@@ -13,3 +13,9 @@ npx create-react-app
 2.create-react-app .   
 3.npm start   
 http://localhost:3000/
+
+# 배포
+1.npm run build
+2.build 파일 생김
+3.npm install -g serve -s build   
+  npx serve -s build
