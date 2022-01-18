@@ -1,4 +1,7 @@
-[참조]<https://opentutorials.org/module/4058>   
+[참조]   
+<https://opentutorials.org/module/4058>   
+<https://reactjs.org/docs/getting-started.html>   
+<https://nodejs.org/ko/download/>
 
 node -v
 npm -v
